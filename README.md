@@ -37,14 +37,6 @@ Result:
 Average latency: 0.894171 seconds
 ```
 
-### POST Request
+# Pricing
 
-You can also make a POST request with the SVG URL in the body. The body should be a JSON object containing the URL.
-
-Example using `curl`:
-
-```sh
-curl -X POST -H "Content-Type: application/json" -d '{"url": "https://docs.tandoor.dev/logo_color.svg"}' https://svg-to-png.mrproper.dev
-```
-
-This will convert the SVG at the specified URL to a PNG and return the PNG image.
+Cost per request: $0.000020296 (about 2 cents per 1000 requests) [[1]](https://letmeprompt.com/rules-httpsuithu-1rwhk00)
