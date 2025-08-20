@@ -5,3 +5,4 @@ build/
 
 .wrangler/tmp
 node_modules/
+.wrangler
