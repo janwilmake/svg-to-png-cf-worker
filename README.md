@@ -4,6 +4,8 @@ SVG to PNG converter in Cloudflare Workers
 
 # Installation
 
+You need to setup [Rust](https://developers.cloudflare.com/workers/languages/rust/) for this after which you should be able to run `wrangler dev` and `wrangler deploy` without issue.
+
 # Usage
 
 https://svg-to-png.wilmake.workers.dev/{SVG-URL}

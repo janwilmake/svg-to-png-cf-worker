@@ -1,4 +1,5 @@
 {
+  "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
   "name": "svg-to-png",
   "compatibility_date": "2025-08-20",
   "main": "build/worker/shim.mjs",
