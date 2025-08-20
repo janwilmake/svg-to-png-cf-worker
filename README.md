@@ -12,6 +12,19 @@ https://svg-to-png.wilmake.workers.dev/{SVG-URL}
 
 **Demo**: https://svg-to-png.wilmake.workers.dev/https://docs.tandoor.dev/logo_color.svg
 
+Stresstest (100x)
+
+```sh
+bash -c 'for i in {1..100}; do curl -o /dev/null -s -w "%{time_total}\n" https://svg-to-png.wilmake.workers.dev/https://blog.hootsuite.com/wp-content/uploads/2024/03/2024-social-media-image-sizes.svg; done | sort -n | awk "BEGIN{print \"P80\tP95\tP99\"} {a[NR]=\$1} END{print a[int(NR*0.8)+1]\"\t\"a[int(NR*0.95)+1]\"\t\"a[int(NR*0.99)+1]}"'
+```
+
+Result:
+
+```
+P80	P95	P99
+0.702912	0.803607	0.823520
+```
+
 ### POST Request
 
 You can also make a POST request with the SVG URL in the body. The body should be a JSON object containing the URL.
