@@ -25,17 +25,17 @@ P80	P95	P99
 0.702912	0.803607	0.823520
 ```
 
-For this one (2048x2048): https://upload.wikimedia.org/wikipedia/commons/8/8c/Australian_Pelican_Kioloa_silhouette.svg
+For this one (2048x2048): https://raw.githubusercontent.com/janwilmake/svg-to-png-cf-worker/refs/heads/main/demo.svg
 
 ```sh
-bash -c 'for i in {1..100}; do curl -o /dev/null -s -w "%{time_total}\n" https://svg-to-png.wilmake.workers.dev/https://upload.wikimedia.org/wikipedia/commons/8/8c/Australian_Pelican_Kioloa_silhouette.svg; done | sort -n | awk "BEGIN{print \"P80\tP95\tP99\"} {a[NR]=\$1} END{print a[int(NR*0.8)+1]\"\t\"a[int(NR*0.95)+1]\"\t\"a[int(NR*0.99)+1]}"'
+bash -c 'for i in {1..100}; do curl -o /dev/null -s -w "%{time_total}\n" https://svg-to-png.wilmake.workers.dev/https://raw.githubusercontent.com/janwilmake/svg-to-png-cf-worker/refs/heads/main/demo.svg; done | sort -n | awk "BEGIN{print \"P80\tP95\tP99\"} {a[NR]=\$1} END{print a[int(NR*0.8)+1]\"\t\"a[int(NR*0.95)+1]\"\t\"a[int(NR*0.99)+1]}"'
 ```
 
 Result:
 
 ```
 P80	P95	P99
-0.702912	0.803607	0.823520
+0.888007	0.902829	1.102060
 ```
 
 ### POST Request
