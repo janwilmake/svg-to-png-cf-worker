@@ -8,7 +8,7 @@ SVG to PNG converter in Cloudflare Workers
 
 https://svg-to-png.wilmake.workers.dev/{SVG-URL}
 
-**Demo**: https://svg-to-png.wilmake.workers.dev
+**Demo**: https://svg-to-png.wilmake.workers.dev/https://docs.tandoor.dev/logo_color.svg
 
 ### POST Request
 
