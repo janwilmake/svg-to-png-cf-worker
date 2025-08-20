@@ -39,4 +39,10 @@ Average latency: 0.894171 seconds
 
 # Pricing
 
-Cost per request: $0.000020296 (about 2 cents per 1000 requests) [[1]](https://letmeprompt.com/rules-httpsuithu-1rwhk00)
+CPU Time
+P50 225.05ms
+P90 334.71ms
+P99 418.73ms
+P999 450.33ms
+
+Cost per 1M requests: ~$6.30 [[1]](https://letmeprompt.com/rules-httpsuithu-xmkahs0)
