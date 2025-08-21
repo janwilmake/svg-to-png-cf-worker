@@ -46,3 +46,7 @@ P99 418.73ms
 P999 450.33ms
 
 Cost per 1M requests: ~$6.30 [[1]](https://letmeprompt.com/rules-httpsuithu-xmkahs0)
+
+# Alternative
+
+https://github.com/thx/resvg-js may also work in a Cloudflare worker!
