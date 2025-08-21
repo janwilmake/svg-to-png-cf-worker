@@ -47,6 +47,8 @@ P999 450.33ms
 
 Cost per 1M requests: ~$6.30 [[1]](https://letmeprompt.com/rules-httpsuithu-xmkahs0)
 
-# Alternative
+# TODO
 
-https://github.com/thx/resvg-js may also work in a Cloudflare worker!
+- See if https://github.com/thx/resvg-js may be a better alternative. may also work in a Cloudflare worker!
+- Currently, text and images don't appear in the final png: https://svg-to-png.wilmake.workers.dev/https://sse.p0web.com/og.svg
+- Try updating dependencies: https://letmeprompt.com/httpspastebincon-ajcjyo0
