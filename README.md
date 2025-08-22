@@ -52,3 +52,4 @@ Cost per 1M requests: ~$6.30 [[1]](https://letmeprompt.com/rules-httpsuithu-xmka
 - See if https://github.com/thx/resvg-js may be a better alternative. may also work in a Cloudflare worker!
 - Currently, text and images don't appear in the final png: https://svg-to-png.wilmake.workers.dev/https://sse.p0web.com/og.svg
 - Try updating dependencies: https://letmeprompt.com/httpspastebincon-ajcjyo0
+- the dream: scalable this: https://github.com/kane50613/takumi
