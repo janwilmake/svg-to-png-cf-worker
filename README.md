@@ -49,7 +49,19 @@ Cost per 1M requests: ~$6.30 [[1]](https://letmeprompt.com/rules-httpsuithu-xmka
 
 # TODO
 
-- See if https://github.com/thx/resvg-js may be a better alternative. may also work in a Cloudflare worker!
+- See if https://github.com/thx/resvg-js may be a better alternative. may also work in a Cloudflare worker! https://github.com/thx/resvg-js/issues/343 https://x.com/duc__an/status/1958900650680721876
 - Currently, text and images don't appear in the final png: https://svg-to-png.wilmake.workers.dev/https://sse.p0web.com/og.svg
 - Try updating dependencies: https://letmeprompt.com/httpspastebincon-ajcjyo0
 - the dream: scalable this: https://github.com/kane50613/takumi
+- https://github.com/thx/resvg-js/issues/382
+
+<!-- Try first:
+```
+curl -X POST 'https://external-svg-renderer.bannerify.co/api/svgstreaming/convert-to-png-stream' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "svgContent": "<svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"red\"/></svg>",
+    "scale": 1.0
+  }' \
+  --output out.png
+``` -->
